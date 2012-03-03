@@ -1,0 +1,9 @@
+LICENSE
+
+Hardware and simulation source files:
+Licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License.
+http://creativecommons.org/licenses/by-nc/3.0/
+
+Software sorce files:
+GNU General Public License, version 3.0 (GPLv3)
+http://opensource.org/licenses/gpl-3.0.html
