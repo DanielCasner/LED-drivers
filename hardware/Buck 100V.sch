@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -159,6 +159,30 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <text x="-1.3" y="1.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.3" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SSOT6">
+<description>&lt;b&gt;SuperSOT-6&lt;/b&gt;&lt;p&gt;
+Source:  Fairchild Semiconductor International ssot6_dim.pdf&lt;br&gt;
+  September 1998, Rev. A</description>
+<wire x1="-1.4" y1="0.75" x2="1.4" y2="0.75" width="0.2032" layer="51"/>
+<wire x1="1.4" y1="0.75" x2="1.4" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.75" x2="-1.4" y2="-0.75" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-0.75" x2="-1.4" y2="0.75" width="0.2032" layer="21"/>
+<circle x="-1.016" y="-0.381" radius="0.1796" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.69" dy="0.99" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.69" dy="0.99" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.69" dy="0.99" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.69" dy="0.99" layer="1" rot="R180"/>
+<smd name="5" x="0" y="1.3" dx="0.69" dy="0.99" layer="1" rot="R180"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.69" dy="0.99" layer="1" rot="R180"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.5" layer="51" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LT3756">
@@ -257,6 +281,44 @@ dimming capability.&lt;/p&gt;</description>
 <vertex x="1.524" y="-0.762"/>
 </polygon>
 </symbol>
+<symbol name="N-FET">
+<description>N channel mosfet</description>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LT3756" prefix="U">
@@ -349,6 +411,24 @@ dimming capability.&lt;/p&gt;</description>
 <connect gate="G$1" pin="D" pad="1 2 3 6 7 8"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI3430DV" prefix="M">
+<description>&lt;h1&gt;N-Channel 100-V (D-S) MOSFET&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="N-FET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOT6">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2 5 6"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12571,6 +12651,19 @@ http://www.zetex.com&lt;p&gt;
 <pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FMMT7*" prefix="T">
@@ -12621,6 +12714,54 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FMMT6*" prefix="T">
+<description>&lt;b&gt; NPN SILICON POWER (SWITCHING) TRANSISTORS&lt;/b&gt; SuperSOT&lt;p&gt;
+Source: http://www.zetex.com/3.0/pdf/FMMT617.pdf</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="17">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="FMMT617" constant="no"/>
+<attribute name="OC_FARNELL" value="9526420" constant="no"/>
+<attribute name="OC_NEWARK" value="96K9966" constant="no"/>
+</technology>
+<technology name="18">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="FMMT618" constant="no"/>
+<attribute name="OC_FARNELL" value="9526439RL" constant="no"/>
+<attribute name="OC_NEWARK" value="96K9967" constant="no"/>
+</technology>
+<technology name="19">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="FMMT619" constant="no"/>
+<attribute name="OC_FARNELL" value="9526447" constant="no"/>
+<attribute name="OC_NEWARK" value="84K9343" constant="no"/>
+</technology>
+<technology name="24">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="FMMT619" constant="no"/>
+<attribute name="OC_FARNELL" value="9526447" constant="no"/>
+<attribute name="OC_NEWARK" value="84K9343" constant="no"/>
+</technology>
+<technology name="25">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="FMMT618" constant="no"/>
+<attribute name="OC_FARNELL" value="9526439" constant="no"/>
+<attribute name="OC_NEWARK" value="96K9967" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -12663,10 +12804,18 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 <part name="L1" library="LED-drivers" deviceset="ASPI-0612FS" device="" value="33.0UH"/>
 <part name="M2" library="LED-drivers" deviceset="SI5435BDC" device=""/>
 <part name="C6" library="rcl" deviceset="C-US" device="C2220K"/>
+<part name="Q1" library="zetex" deviceset="FMMT6*" device="" technology="25"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R0402" value="1.5K"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R0402" value="1K"/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="M1" library="LED-drivers" deviceset="SI3430DV" device=""/>
+<part name="R10" library="rcl" deviceset="R-US_" device="R0402" value="0.1"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="106.68" y="-22.86" size="1.778" layer="97">NEED SHOTKEY DIODE!!!</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="0" y="0"/>
@@ -12705,9 +12854,16 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 <instance part="R6" gate="G$1" x="50.8" y="58.42" rot="R90"/>
 <instance part="R7" gate="G$1" x="58.42" y="48.26"/>
 <instance part="GND9" gate="1" x="38.1" y="30.48"/>
-<instance part="L1" gate="G$1" x="104.14" y="10.16" rot="R90"/>
-<instance part="M2" gate="G$1" x="101.6" y="38.1"/>
-<instance part="C6" gate="G$1" x="76.2" y="55.88" rot="R180"/>
+<instance part="L1" gate="G$1" x="104.14" y="-12.7" rot="R90"/>
+<instance part="M2" gate="G$1" x="101.6" y="17.78"/>
+<instance part="C6" gate="G$1" x="66.04" y="55.88" rot="R180"/>
+<instance part="Q1" gate="G$1" x="86.36" y="20.32"/>
+<instance part="R8" gate="G$1" x="88.9" y="35.56" rot="R90"/>
+<instance part="R9" gate="G$1" x="88.9" y="10.16" rot="R90"/>
+<instance part="GND10" gate="1" x="88.9" y="2.54"/>
+<instance part="M1" gate="G$1" x="101.6" y="-27.94"/>
+<instance part="R10" gate="G$1" x="104.14" y="-43.18" rot="R90"/>
+<instance part="GND11" gate="1" x="104.14" y="-53.34"/>
 </instances>
 <busses>
 </busses>
@@ -12750,6 +12906,15 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="-50.8" x2="104.14" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -12771,18 +12936,32 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 <wire x1="38.1" y1="63.5" x2="0" y2="63.5" width="0.1524" layer="91"/>
 <junction x="38.1" y="63.5"/>
 <junction x="0" y="63.5"/>
-<pinref part="RIS_PTH" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="55.88" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="RIS_SMD" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="55.88" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <junction x="50.8" y="63.5"/>
-<junction x="101.6" y="63.5"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="60.96" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
-<junction x="76.2" y="63.5"/>
+<wire x1="66.04" y1="60.96" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<junction x="66.04" y="63.5"/>
+<pinref part="RIS_SMD" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="55.88" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="33.02" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="17.78" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="ISP"/>
+<wire x1="20.32" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="RIS_PTH" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="58.42" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+<junction x="101.6" y="58.42"/>
+<junction x="104.14" y="58.42"/>
+<wire x1="106.68" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<label x="111.76" y="58.42" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="40.64" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<junction x="88.9" y="63.5"/>
 </segment>
 </net>
 <net name="SHDN" class="0">
@@ -12902,39 +13081,105 @@ Source: http://www.zetex.com/3.0/pdf/FMMT717.pdf</description>
 <junction x="50.8" y="48.26"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="IS" class="0">
 <segment>
 <pinref part="RIS_SMD" gate="G$1" pin="1"/>
 <pinref part="RIS_PTH" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="M2" gate="G$1" pin="S"/>
 <wire x1="104.14" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="43.18" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="22.86" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <junction x="104.14" y="45.72"/>
+<pinref part="U1" gate="G$1" pin="ISN"/>
+<wire x1="104.14" y1="43.18" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="10.16" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="33.02" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+<junction x="104.14" y="43.18"/>
+<wire x1="104.14" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<label x="111.76" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_A" class="0">
 <segment>
 <pinref part="M2" gate="G$1" pin="D"/>
-<wire x1="104.14" y1="33.02" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="25.4" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
-<label x="111.76" y="25.4" size="1.778" layer="95"/>
+<wire x1="104.14" y1="12.7" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="7.62" x2="119.38" y2="7.62" width="0.1524" layer="91"/>
+<label x="111.76" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_C" class="0">
 <segment>
-<wire x1="119.38" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="20.32" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
-<label x="111.76" y="20.32" size="1.778" layer="95"/>
+<wire x1="119.38" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-2.54" x2="104.14" y2="-7.62" width="0.1524" layer="91"/>
+<label x="111.76" y="-2.54" size="1.778" layer="95"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="20.32" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-<junction x="104.14" y="20.32"/>
+<wire x1="66.04" y1="-2.54" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<junction x="104.14" y="-2.54"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="53.34" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
-<junction x="76.2" y="48.26"/>
+<wire x1="66.04" y1="53.34" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<junction x="66.04" y="48.26"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="25.4" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="M2" gate="G$1" pin="G"/>
+<wire x1="88.9" y1="27.94" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<junction x="88.9" y="27.94"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PWMOUT"/>
+<wire x1="20.32" y1="-12.7" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-12.7" x2="78.74" y2="0" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="0" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="78.74" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="M1" gate="G$1" pin="D"/>
+<wire x1="104.14" y1="-17.78" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GATE"/>
+<wire x1="20.32" y1="2.54" x2="58.42" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="2.54" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="G"/>
+<wire x1="91.44" y1="-30.48" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SENSE"/>
+<wire x1="20.32" y1="-5.08" x2="53.34" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-5.08" x2="83.82" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="S"/>
+<wire x1="83.82" y1="-35.56" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-35.56" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="-38.1" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="104.14" y="-35.56"/>
 </segment>
 </net>
 </nets>
