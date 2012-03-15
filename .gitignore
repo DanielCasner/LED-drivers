@@ -1,2 +1,6 @@
 # EAGLE Cad temp files
 *.?#?
+
+
+# LTSpice data files
+*.raw
