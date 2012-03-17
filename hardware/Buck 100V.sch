@@ -15142,7 +15142,7 @@ W = angled&lt;p&gt;
 <part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="16.9K"/>
 <part name="RT1" library="rcl" deviceset="R-US_" device="R0805" value="NCP18WF104J03RB"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-US" device="C0805" value="0.05uF"/>
+<part name="C3" library="rcl" deviceset="C-US" device="C0805" value="0.047uF"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0805" value="4.7uF 100V"/>
 <part name="C5" library="rcl" deviceset="C-US" device="C0805" value="1000pF"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="47k"/>
@@ -15161,7 +15161,6 @@ W = angled&lt;p&gt;
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="LED-drivers" deviceset="ASPI-0612FS" device="" value="33.0UH"/>
 <part name="M2" library="LED-drivers" deviceset="SI5435BDC" device=""/>
-<part name="C6" library="rcl" deviceset="C-US" device="C2220K" value="15uF 100V"/>
 <part name="Q1" library="zetex" deviceset="FMMT6*" device="" technology="25"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0805" value="1.5K"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
@@ -15182,6 +15181,7 @@ W = angled&lt;p&gt;
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="JH" library="con-lstb" deviceset="MA06-1" device=""/>
 <part name="JL" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="C6" library="rcl" deviceset="CPOL-US" device="E2,5-6E" value="15uF 100V"/>
 </parts>
 <sheets>
 <sheet>
@@ -15233,10 +15233,6 @@ W = angled&lt;p&gt;
 <instance part="GND9" gate="1" x="38.1" y="25.4"/>
 <instance part="L1" gate="G$1" x="104.14" y="-12.7" rot="R90"/>
 <instance part="M2" gate="G$1" x="101.6" y="17.78"/>
-<instance part="C6" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="67.056" y="59.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.056" y="51.689" size="1.778" layer="96"/>
-</instance>
 <instance part="Q1" gate="G$1" x="86.36" y="20.32"/>
 <instance part="R8" gate="G$1" x="88.9" y="35.56" rot="R90"/>
 <instance part="R9" gate="G$1" x="88.9" y="10.16" rot="R90"/>
@@ -15262,6 +15258,10 @@ W = angled&lt;p&gt;
 <instance part="GND16" gate="1" x="154.94" y="43.18"/>
 <instance part="JH" gate="1" x="182.88" y="50.8" rot="R180"/>
 <instance part="JL" gate="1" x="182.88" y="22.86" rot="R180"/>
+<instance part="C6" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="69.596" y="59.055" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.596" y="54.229" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15364,7 +15364,6 @@ W = angled&lt;p&gt;
 <wire x1="88.9" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <junction x="50.8" y="63.5"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="60.96" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 <junction x="66.04" y="63.5"/>
 <pinref part="RIS_SMD" gate="G$1" pin="2"/>
@@ -15388,6 +15387,7 @@ W = angled&lt;p&gt;
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-58.42" y1="58.42" x2="-58.42" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-58.42" y="63.5"/>
+<pinref part="C6" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="V+"/>
@@ -15622,9 +15622,9 @@ W = angled&lt;p&gt;
 <wire x1="66.04" y1="-2.54" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <junction x="104.14" y="-2.54"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
+<pinref part="C6" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
