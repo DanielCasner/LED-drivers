@@ -15273,7 +15273,7 @@ W = angled&lt;p&gt;
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="JH" library="con-lstb" deviceset="MA06-1" device=""/>
 <part name="JL" library="con-lstb" deviceset="MA08-1" device=""/>
-<part name="C6" library="rcl" deviceset="CPOL-US" device="E2,5-6E" value="15uF 100V"/>
+<part name="C_OUT" library="rcl" deviceset="CPOL-US" device="E2,5-6E" value="15uF 100V"/>
 <part name="RIS_SMD" library="LED-drivers" deviceset="R-KELVIN" device="R2512"/>
 <part name="RIS_PTH" library="LED-drivers" deviceset="R-KELVIN" device="0204/7"/>
 </parts>
@@ -15349,7 +15349,7 @@ W = angled&lt;p&gt;
 <instance part="GND16" gate="1" x="154.94" y="43.18"/>
 <instance part="JH" gate="1" x="182.88" y="50.8" rot="R180"/>
 <instance part="JL" gate="1" x="182.88" y="22.86" rot="R180"/>
-<instance part="C6" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R180">
+<instance part="C_OUT" gate="G$1" x="66.04" y="55.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="69.596" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="69.596" y="54.229" size="1.778" layer="96"/>
 </instance>
@@ -15469,7 +15469,7 @@ W = angled&lt;p&gt;
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-58.42" y1="58.42" x2="-58.42" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-58.42" y="63.5"/>
-<pinref part="C6" gate="G$1" pin="-"/>
+<pinref part="C_OUT" gate="G$1" pin="-"/>
 <pinref part="RIS_PTH" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="55.88" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="RIS_SMD" gate="G$1" pin="2"/>
@@ -15682,7 +15682,7 @@ W = angled&lt;p&gt;
 <junction x="104.14" y="-2.54"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
-<pinref part="C6" gate="G$1" pin="+"/>
+<pinref part="C_OUT" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
@@ -15718,7 +15718,7 @@ W = angled&lt;p&gt;
 <wire x1="73.66" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="N_BUCK" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="M1" gate="G$1" pin="D"/>
