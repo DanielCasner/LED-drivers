@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15811,6 +15811,18 @@ W = angled&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,0,35.56,U1,VIN,V+,,,"/>
+<approved hash="104,1,-20.32,-27.94,U1,INTVCC,N$2,,,"/>
+<approved hash="206,1,106.68,48.26,ISN,,,,,"/>
+<approved hash="206,1,96.52,48.26,ISN,,,,,"/>
+<approved hash="206,1,106.68,53.34,ISP,,,,,"/>
+<approved hash="206,1,96.52,53.34,ISP,,,,,"/>
+<approved hash="115,1,177.842,50.6053,JH,,,,,"/>
+<approved hash="115,1,177.842,20.1253,JL,,,,,"/>
+<approved hash="115,1,97.718,50.8,RIS_SMD,,,,,"/>
+<approved hash="115,1,107.878,50.8,RIS_PTH,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
