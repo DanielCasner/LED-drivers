@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.003125" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -18,7 +18,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -1767,41 +1767,105 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U1" library="LED-drivers" package="MSOP16EXP" value="LT3756EMSE" x="16.51" y="38.020625" rot="R180"/>
-<element name="C1" library="rcl" package="C2220K" value="4.7uF 100V" x="16.51" y="3.730625"/>
-<element name="C2" library="rcl" package="E2,5-6E" value="15uF 100V" x="19.05" y="13.335" rot="R315"/>
-<element name="R1" library="rcl" package="R0805" value="16.9K" x="2.54" y="43.18" rot="R90"/>
-<element name="RT1" library="rcl" package="R0805" value="NCP18WF104J03RB" x="5.08" y="43.18" rot="R270"/>
-<element name="C3" library="rcl" package="C0805" value="0.047uF" x="12.065" y="32.623125" rot="R270"/>
-<element name="C4" library="rcl" package="C0805" value="4.7uF 16V" x="17.93875" y="32.623125" rot="R270"/>
-<element name="C5" library="rcl" package="C0805" value="1000pF" x="10.16" y="43.18" rot="R90"/>
-<element name="R2" library="rcl" package="R0805" value="47k" x="7.62" y="43.18" rot="R270"/>
-<element name="R3" library="rcl" package="R0805" value="28.7k" x="14.525625" y="32.623125" rot="R90"/>
-<element name="Q2" library="zetex" package="SOT-23" value="FMMT723" x="5.08" y="33.02">
+<element name="C1" library="rcl" package="C2220K" value="4.7uF 100V" x="16.51" y="3.730625" smashed="yes">
+<attribute name="NAME" x="20.21875" y="1.68" size="1.016" layer="25"/>
+<attribute name="VALUE" x="13.71" y="-0.244375" size="1.016" layer="27"/>
+</element>
+<element name="C2" library="rcl" package="E2,5-6E" value="15uF 100V" x="19.05" y="13.335" smashed="yes" rot="R315">
+<attribute name="NAME" x="13.758484375" y="12.60615" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="19.1398" y="9.65309375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="R1" library="rcl" package="R0805" value="16.9K" x="2.54" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.81" y="41.195625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="5.08" y="42.545" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="RT1" library="rcl" package="R0805" value="NCP18WF104J03RB" x="5.08" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.270625" y="41.195625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="2.54" y="43.815" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C3" library="rcl" package="C0805" value="0.047uF" x="12.065" y="32.623125" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.81125" y="29.765625" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="9.525" y="33.893125" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C4" library="rcl" package="C0805" value="4.7uF 16V" x="17.93875" y="32.623125" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.224375" y="29.68625" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="15.39875" y="33.893125" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C5" library="rcl" package="C0805" value="1000pF" x="10.16" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="10.874375" y="41.195625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="12.7" y="41.91" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R2" library="rcl" package="R0805" value="47k" x="7.62" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.334375" y="41.195625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="5.08" y="43.815" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R3" library="rcl" package="R0805" value="28.7k" x="14.525625" y="32.623125" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.350625" y="34.845625" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="17.065625" y="31.988125" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="Q2" library="zetex" package="SOT-23" value="FMMT723" x="5.08" y="33.02" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="35.56" y="2.54" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="35.56" y="2.54" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="35.56" y="2.54" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="35.56" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="3.683" y="34.798" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="1.143" y="32.67075" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R4" library="rcl" package="R0805" value="11K" x="8.89" y="33.02" rot="R270"/>
-<element name="R5" library="rcl" package="R0805" value="200K" x="3.81" y="38.1" rot="R90"/>
-<element name="R6" library="rcl" package="R0805" value="200K" x="6.35" y="38.1" rot="R90"/>
-<element name="R7" library="rcl" package="R0805" value="200K" x="8.89" y="38.1" rot="R90"/>
+<element name="R4" library="rcl" package="R0805" value="11K" x="8.89" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.175625" y="30.1625" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="6.35" y="33.655" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R5" library="rcl" package="R0805" value="200K" x="3.81" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="4.524375" y="36.115625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="6.35" y="37.465" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R6" library="rcl" package="R0805" value="200K" x="6.35" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.064375" y="36.115625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="8.89" y="37.465" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R7" library="rcl" package="R0805" value="200K" x="8.89" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.604375" y="36.115625" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="11.43" y="37.465" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="L1" library="LED-drivers" package="ASPI-0612FS" value="33.0UH" x="11.43" y="19.685" rot="R180"/>
-<element name="M2" library="LED-drivers" package="1206-8CHIP-FET" value="SI5435BDC" x="8.89" y="12.7" rot="R180"/>
-<element name="Q1" library="zetex" package="SOT-23" value="FMMT625" x="17.78" y="17.78">
+<element name="M2" library="LED-drivers" package="1206-8CHIP-FET" value="SI5435BDC" x="8.89" y="12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.765" y="12.095" size="1.27" layer="25"/>
+<attribute name="VALUE" x="10.19" y="15.3" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="Q1" library="zetex" package="SOT-23" value="FMMT625" x="17.78" y="17.78" smashed="yes">
 <attribute name="OC_NEWARK" value="96K9967" x="38.1" y="-12.7" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FMMT618" x="38.1" y="-12.7" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="38.1" y="-12.7" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="9526439" x="38.1" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="16.383" y="19.558" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="19.558" y="17.272" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="R8" library="rcl" package="R0805" value="1.5K" x="19.05" y="21.59" rot="R90"/>
-<element name="R9" library="rcl" package="R0805" value="1K" x="16.51" y="21.59" rot="R270"/>
-<element name="M1" library="LED-drivers" package="SSOT6" value="SI3430DV" x="13.97" y="26.67" rot="R90"/>
-<element name="RSENSE" library="rcl" package="R0805" value="0.1" x="19.05" y="26.67" rot="R90"/>
+<element name="R8" library="rcl" package="R0805" value="1.5K" x="19.05" y="21.59" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.16125" y="22.38375" size="0.8128" layer="25" rot="R270"/>
+<attribute name="VALUE" x="21.59" y="20.955" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R9" library="rcl" package="R0805" value="1K" x="16.51" y="21.59" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.39875" y="20.875625" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="13.97" y="22.225" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="M1" library="LED-drivers" package="SSOT6" value="SI3430DV" x="13.97" y="26.67" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.90625" y="26.51125" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="17.145" y="24.765" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="RSENSE" library="rcl" package="R0805" value="0.1" x="19.05" y="26.67" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.034375" y="24.526875" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="21.59" y="26.035" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="D1" library="diode" package="SMB" value="STPS2H100UY" x="6.35" y="27.94"/>
 <element name="D2" library="diode" package="SMC" value="SMCJ100A" x="6.35" y="3.730625"/>
-<element name="D3" library="diode" package="SOT23" value="MMBZ9V1AL,215" x="8.89" y="52.3875"/>
-<element name="D4" library="diode" package="SOT23" value="MMBZ9V1AL,215" x="15.319375" y="52.3875"/>
+<element name="D3" library="diode" package="SOT23" value="MMBZ9V1AL,215" x="8.89" y="52.3875" smashed="yes">
+<attribute name="NAME" x="7.381875" y="52.943125" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="6.985" y="49.2125" size="1.27" layer="27"/>
+</element>
+<element name="D4" library="diode" package="SOT23" value="MMBZ9V1AL,215" x="15.319375" y="52.3875" smashed="yes">
+<attribute name="NAME" x="16.8275" y="51.673125" size="1.27" layer="25"/>
+<attribute name="VALUE" x="13.414375" y="49.2125" size="1.27" layer="27"/>
+</element>
 <element name="JH" library="con-lstb" package="MA06-1" value="" x="13.97" y="8.175625">
 <attribute name="OC_NEWARK" value="unknown" x="66.04" y="-15.954375" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="66.04" y="-15.954375" size="1.778" layer="27" display="off"/>
@@ -1814,7 +1878,10 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="44.45" y="24.685625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="44.45" y="24.685625" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C_OUT" library="rcl" package="E2,5-6E" value="15uF 100V" x="5.08" y="21.59"/>
+<element name="C_OUT" library="rcl" package="E2,5-6E" value="15uF 100V" x="5.08" y="21.59" smashed="yes">
+<attribute name="NAME" x="2.19075" y="24.384" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="7.747" y="19.05" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="RIS_SMD" library="LED-drivers" package="R2512_KELVIN" value="" x="3.175" y="13.97" smashed="yes" rot="R90">
 <attribute name="VALUE" x="6.35" y="11.43" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -1864,12 +1931,12 @@ design rules under a new name.</description>
 <wire x1="9.286875" y1="34.13125" x2="10.239375" y2="34.13125" width="0.3048" layer="1"/>
 <wire x1="10.16" y1="44.13" x2="10.16" y2="45.4025" width="0.3048" layer="1"/>
 <wire x1="5.08" y1="44.13" x2="5.08" y2="45.4025" width="0.3048" layer="1"/>
-<via x="10.4775" y="53.34" extent="1-16" drill="0.6"/>
-<via x="13.6525" y="53.34" extent="1-16" drill="0.6"/>
-<wire x1="8.89" y1="53.4875" x2="10.3075" y2="53.17" width="0.3048" layer="1"/>
-<wire x1="10.3075" y1="53.17" x2="10.4775" y2="53.34" width="0.3048" layer="1"/>
-<wire x1="15.319375" y1="53.4875" x2="13.8225" y2="53.17" width="0.3048" layer="1"/>
-<wire x1="13.8225" y1="53.17" x2="13.6525" y2="53.34" width="0.3048" layer="1"/>
+<via x="10.31875" y="53.578125" extent="1-16" drill="0.6"/>
+<via x="13.81125" y="53.578125" extent="1-16" drill="0.6"/>
+<wire x1="8.89" y1="53.4875" x2="10.3075" y2="53.4875" width="0.3048" layer="1"/>
+<wire x1="10.3075" y1="53.4875" x2="10.31875" y2="53.578125" width="0.3048" layer="1"/>
+<wire x1="15.319375" y1="53.4875" x2="13.901875" y2="53.4875" width="0.3048" layer="1"/>
+<wire x1="13.901875" y1="53.4875" x2="13.81125" y2="53.578125" width="0.3048" layer="1"/>
 <wire x1="20.32" y1="8.175625" x2="20.32" y2="12.065" width="1.6764" layer="1"/>
 <wire x1="20.32" y1="12.065" x2="20.0025" y2="12.3825" width="1.6764" layer="1"/>
 <via x="17.4625" y="32.22625" extent="1-16" drill="0.6"/>
@@ -2325,50 +2392,6 @@ design rules under a new name.</description>
 <wire x1="2.8575" y1="31.115" x2="2.2225" y2="31.115" width="0.254" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="2,20,0c24ff5cfd5d0e25"/>
-<approved hash="2,20,0554f62cf5a306db"/>
-<approved hash="4,1,c714232da32f6715"/>
-<approved hash="4,1,e558d56dd56d4559"/>
-<approved hash="19,1,d7fcba4ea2e1bfea"/>
-<approved hash="19,1,d2a4234542b853ce"/>
-<approved hash="19,1,2fff92f808656c3a"/>
-<approved hash="19,1,da49a946f03c2532"/>
-<approved hash="19,1,d54a404319ba94ae"/>
-<approved hash="19,1,2c1b5fefc8f44c5a"/>
-<approved hash="19,1,2c1b5fefc8f44c5a"/>
-<approved hash="19,1,b36c3afda81f6527"/>
-<approved hash="19,1,88057f05bb064c06"/>
-<approved hash="19,1,080c2282bcbf616b"/>
-<approved hash="19,1,080c2282bcbf616b"/>
-<approved hash="19,1,7fdbf39607cce182"/>
-<approved hash="19,1,2ee625ebc4efddfe"/>
-<approved hash="19,1,e6a3063bc23822a0"/>
-<approved hash="19,1,f3c05d9d7cb8fa9b"/>
-<approved hash="19,1,340a23eec7617bb9"/>
-<approved hash="19,1,b5c120ef405e348d"/>
-<approved hash="19,1,93a154a3b480e364"/>
-<approved hash="19,1,3332353235303330"/>
-<approved hash="19,1,4039e922a01463ed"/>
-<approved hash="19,1,2f3a293a2aa82ca8"/>
-<approved hash="19,1,d2011c696d555c5a"/>
-<approved hash="19,1,c4e8ac544f95cb4b"/>
-<approved hash="19,1,3332353235303330"/>
-<approved hash="19,1,b21519eefe42632d"/>
-<approved hash="19,1,987bbf4ac7809087"/>
-<approved hash="5,1,59ef812d816c5cd6"/>
-<approved hash="19,1,7f43e0852a3f4985"/>
-<approved hash="19,1,83c13e1059af3106"/>
-<approved hash="19,1,e8067bcb1ea1e014"/>
-<approved hash="19,1,774627d144c4aa5b"/>
-<approved hash="5,1,2580de86ab365632"/>
-<approved hash="5,1,941c68e41d54e7ae"/>
-<approved hash="19,16,3332353235303330"/>
-<approved hash="19,16,b2151a1140dcc6de"/>
-<approved hash="19,16,2f3a293a2aa82ca8"/>
-<approved hash="19,16,3332353235303330"/>
-<approved hash="19,16,b21519eefe42632d"/>
-</errors>
 </board>
 </drawing>
 </eagle>
