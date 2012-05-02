@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2092,8 +2092,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.0175" y1="40.243125" x2="13.0175" y2="40.9575" width="0.254" layer="1"/>
 <wire x1="13.0175" y1="40.9575" x2="12.065" y2="41.91" width="0.254" layer="1"/>
 <wire x1="12.065" y1="41.91" x2="11.350625" y2="41.91" width="0.254" layer="1"/>
-<wire x1="11.350625" y1="41.91" x2="11.350625" y2="48.815625" width="0.254" layer="1"/>
-<wire x1="11.350625" y1="48.815625" x2="10.16" y2="48.815625" width="0.254" layer="1"/>
+<wire x1="11.350625" y1="41.91" x2="11.350625" y2="51.27625" width="0.254" layer="1"/>
+<wire x1="11.350625" y1="51.27625" x2="9.921875" y2="51.27625" width="0.254" layer="1"/>
+<wire x1="9.921875" y1="51.27625" x2="9.921875" y2="51.196875" width="0.254" layer="1"/>
+<wire x1="9.921875" y1="51.27625" x2="9.84" y2="51.27625" width="0.254" layer="1"/>
+<wire x1="9.84" y1="51.27625" x2="9.84" y2="51.2875" width="0.254" layer="1"/>
 </signal>
 <signal name="PWM">
 <contactref element="U1" pad="8"/>
@@ -2106,8 +2109,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.76375" y1="44.295" x2="14.76375" y2="46.51375" width="0.254" layer="1"/>
 <wire x1="14.76375" y1="46.51375" x2="12.303125" y2="46.51375" width="0.254" layer="1"/>
 <via x="12.303125" y="46.51375" extent="1-16" drill="0.6"/>
-<wire x1="12.303125" y1="46.51375" x2="7.62" y2="46.51375" width="0.254" layer="16"/>
-<wire x1="7.62" y1="46.51375" x2="7.62" y2="48.815625" width="0.254" layer="16"/>
+<wire x1="12.303125" y1="46.51375" x2="8.969375" y2="46.51375" width="0.254" layer="16"/>
+<via x="8.969375" y="46.51375" extent="1-16" drill="0.6"/>
+<wire x1="8.969375" y1="46.51375" x2="8.89" y2="46.51375" width="0.254" layer="1"/>
+<wire x1="8.89" y1="46.51375" x2="8.89" y2="51.27625" width="0.254" layer="1"/>
+<wire x1="8.89" y1="51.27625" x2="7.94" y2="51.27625" width="0.254" layer="1"/>
+<wire x1="7.94" y1="51.27625" x2="7.94" y2="51.2875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="10"/>
@@ -2160,8 +2167,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.78" y1="49.779375" x2="17.78" y2="48.815625" width="0.8128" layer="1"/>
 <wire x1="5.1054" y1="32.004" x2="8.824" y2="32.004" width="0.6096" layer="1"/>
 <wire x1="8.824" y1="32.004" x2="8.89" y2="32.07" width="0.6096" layer="1"/>
-<wire x1="17.78" y1="48.815625" x2="17.78" y2="47.9425" width="0.3048" layer="1"/>
-<wire x1="17.78" y1="47.9425" x2="21.2725" y2="44.45" width="0.3048" layer="1"/>
 <wire x1="21.2725" y1="44.45" x2="21.2725" y2="41.036875" width="0.3048" layer="1"/>
 <wire x1="21.2725" y1="41.036875" x2="17.76" y2="41.036875" width="0.3048" layer="1"/>
 <wire x1="17.76" y1="41.036875" x2="17.76" y2="40.070625" width="0.3048" layer="1"/>
@@ -2176,6 +2181,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="19.685" y1="38.338125" x2="19.685" y2="39.163625" width="0.254" layer="1"/>
 <wire x1="19.685" y1="39.163625" x2="17.78" y2="39.163625" width="0.254" layer="1"/>
 <wire x1="17.78" y1="40.070625" x2="17.78" y2="39.163625" width="0.254" layer="1"/>
+<wire x1="21.2725" y1="44.45" x2="19.05" y2="46.6725" width="0.3048" layer="1"/>
+<wire x1="19.05" y1="46.6725" x2="19.05" y2="51.196875" width="0.3048" layer="1"/>
+<wire x1="19.05" y1="51.196875" x2="18.970625" y2="51.27625" width="0.3048" layer="1"/>
+<wire x1="18.970625" y1="51.27625" x2="16.271875" y2="51.27625" width="0.3048" layer="1"/>
+<wire x1="16.269375" y1="51.2875" x2="16.271875" y2="51.285" width="0.3048" layer="1"/>
+<wire x1="16.271875" y1="51.285" x2="16.271875" y2="51.27625" width="0.3048" layer="1"/>
 <wire x1="17.78" y1="40.070625" x2="17.76" y2="40.070625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FB_TOP">
@@ -2389,48 +2400,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.8575" y1="31.115" x2="2.2225" y2="31.115" width="0.254" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="2,20,1ed360217c810273"/>
-<approved hash="2,20,0fad715f7d2703d5"/>
-<approved hash="19,1,098d2efe769d2fa8"/>
-<approved hash="19,1,0ee3dd768a45b0e7"/>
-<approved hash="19,1,2e2749a6a3c06671"/>
-<approved hash="19,1,10916024ed496062"/>
-<approved hash="19,1,10916024ed496062"/>
-<approved hash="19,1,dc0ac9ba0b7e80cb"/>
-<approved hash="19,1,19e550c6fe23c242"/>
-<approved hash="19,1,167d8fd183d21a7e"/>
-<approved hash="19,1,b164ca38f5a7fa83"/>
-<approved hash="19,1,46139abf7b63eed9"/>
-<approved hash="19,1,540f93bc8a7f45c5"/>
-<approved hash="19,1,50f84609b6065d69"/>
-<approved hash="19,1,50f84609b6065d69"/>
-<approved hash="19,1,cb0e4c7e2326e490"/>
-<approved hash="19,1,78d7f14bfd4874d4"/>
-<approved hash="19,1,0fdaf175f9367f7c"/>
-<approved hash="19,1,0cf9b809edd2b377"/>
-<approved hash="19,1,0180af28725dd320"/>
-<approved hash="19,1,7a7e7a7e7a3e7a3e"/>
-<approved hash="19,1,be3f79e2ab55e1eb"/>
-<approved hash="19,1,676e676e66ee66ee"/>
-<approved hash="19,1,20ec6be269bc21ba"/>
-<approved hash="19,1,a8336291c838fa0d"/>
-<approved hash="19,1,43ed60cb32a1f8b0"/>
-<approved hash="19,1,7a7e7a7e7a3e7a3e"/>
-<approved hash="19,1,04e29e0ac70fa59d"/>
-<approved hash="19,1,cdcd64ac72d34926"/>
-<approved hash="19,1,a24a431dbb28ff42"/>
-<approved hash="19,1,0eb92c93be44de3c"/>
-<approved hash="19,1,6a387d84aa2c6bf9"/>
-<approved hash="5,1,cf9d87097ac67053"/>
-<approved hash="19,1,02c0a8bead1d0763"/>
-<approved hash="19,1,8ec144bf411f8b61"/>
-<approved hash="19,16,7a7e7a7e7a3e7a3e"/>
-<approved hash="19,16,cdcd67c3bb1dee1f"/>
-<approved hash="19,16,7a7e7a7e7a3e7a3e"/>
-<approved hash="19,16,cdcd64ac72d34926"/>
-<approved hash="19,16,676e676e66ee66ee"/>
-</errors>
 </board>
 </drawing>
 </eagle>
