@@ -60,6 +60,11 @@
 <wire x1="22.53" y1="0" x2="22.53" y2="55.235" width="0" layer="20"/>
 <wire x1="22.53" y1="55.235" x2="0" y2="55.235" width="0" layer="20"/>
 <wire x1="0" y1="55.235" x2="0" y2="0" width="0" layer="20"/>
+<text x="21.9075" y="29.606875" size="1.27" layer="25" rot="R90">www.danielcasner.org</text>
+<text x="4.7625" y="20.0025" size="1.016" layer="26" rot="MR180">100V 0.5A LED Buck Driver</text>
+<text x="21.193125" y="17.383125" size="1.016" layer="26" rot="MR0">by Daniel Casner</text>
+<text x="21.2725" y="15.875" size="1.016" layer="26" rot="MR0">www.danielcasner.org</text>
+<text x="0.9525" y="53.419375" size="1.016" layer="25">DC Labs</text>
 </plain>
 <libraries>
 <library name="LED-drivers">
