@@ -4,3 +4,4 @@
 
 # LTSpice data files
 *.raw
+.DS_Store
